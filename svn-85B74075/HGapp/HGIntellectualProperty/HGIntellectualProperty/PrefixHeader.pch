@@ -1,0 +1,154 @@
+//
+//  PrefixHeader.pch
+//  HGIntellectualProperty
+//
+//  Created by 耿广杰 on 2017/5/22.
+//  Copyright © 2017年 HG. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <WebKit/WebKit.h>
+#import <ImageIO/ImageIO.h>
+#import "SVProgressHUD.h"
+#import "UIImageView+WebCache.h"
+#import "Mantle.h"
+#import "MJRefresh.h"
+#import "AppDelegate.h"
+#import "UMMobClick/MobClick.h"
+#import <UMSocialCore/UMSocialCore.h>
+#import "GGTool.h"
+#import "AppUserDefaults.h"
+#import "RequestManager.h"
+#import "NetPromptBox.h"
+#import "LoginViewController.h"
+#import "ErrandsDetialTableViewController.h"
+#import "WebViewController.h"
+#import "PublishErrandTableViewController.h"
+#import "NotAgentPromptViewController.h"
+#import "SelectedCityViewController.h"
+#import "RobbedDetialTableViewController.h"
+#import "VPImageCropperViewController.h"
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "WXApi.h"
+#import "DBManager.h"
+#import "HotSearchView.h"
+#import "RequestURL.h"
+#import "CALayer+StoryBoardConfig.h"
+#import "HTMLViewController.h"
+#import "CutoverManager.h"
+#import "FilterManager.h"
+#import <UShareUI/UShareUI.h>
+#import <AlipaySDK/AlipaySDK.h>
+
+
+
+// 引入JPush功能所需头文件
+#import "JPUSHService.h"
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#import <YYModel/YYModel.h>
+
+#import "LoadingManager.h"
+#import "ResultNumView.h"
+#import "ProgressSearchViewController.h"
+#import "ScanViewController.h"
+#import "AssociateView.h"
+#import "UIImage+GIF.h"
+#import "UIBarButtonItem+GGExtension.h"
+#import "Masonry.h"
+#import "SSKeychain.h"
+#endif
+
+
+#import "ErrandModel.h"
+#import "AreaModel.h"
+#import "ErrandClassModel.h"
+#import "GrabErrandModel.h"
+#import "ProgressModel.h"
+#import "PatentModel.h"
+#import "AgentModel.h"
+#import "AgentDomainModel.h"
+#import "AgentTypeModel.h"
+#import "AgentSutTypeModel.h"
+#import "SystemMessageModel.h"
+#import "CommentModel.h"
+#import "BannerModel.h"
+#import "RecordingModel.h"
+#import "PatentProgressModel.h"
+
+#import "HotSearchModel.h"
+#import "HeadlinesModel.h"
+#import "TrademarkModel.h"
+#import "MonitorCompanyModel.h"
+#import "MonitorContentModel.h"
+#import "AppTabbarViewController.h"
+#import "SearchAllModel.h"
+#import "NoPayModel.h"
+#import "OrderModel.h"
+#import "ChildOrderModel.h"
+#import "CopyrightModel.h"
+#import "CompanyEnableProgressPatentModel.h"
+#import "SoftwareCopyrightModel.h"
+#import "WorksCopyrightModel.h"
+#import "OrganizationModel.h"
+#import "OrgAreaModel.h"
+#import "OtherWorkModel.h"
+#import "BusinessModel.h"
+#import "VersionModel.h"
+#import "ShareManager.h"
+#import "BuyInformationModel.h"
+#import "AttentionModel.h"
+#import "CRMOrderProcessModel.h"
+
+#define LoginNodti @"LoginNodtificationCenter"
+#define LogoutNoti @"LogoutNotificationCenter"
+#define AlipayNoti @"AlipayNotificationCenter"
+#define WeChatPayNoti @"WeChatPayNotificationCenter"
+#define ResultViewHiddenNoti @"ResultViewHiddenNotificationCenter"
+#define LocationNoti @"LocationNotificationCenter"
+#define HomeFilterReloaddateNoti @"HomeFilterReloaddateNotificationCenter"
+#define OpenPolicyInformationNoti @"OpenPolicyInformationNoticationCenter"
+#define OpenBecomeAgentNoti @"OpenBecomeAgentNoticationCenter"
+#define EventEntranceTapNoti @"EventEntranceTapNotificationCenter"
+
+#if TARGET_IPHONE_SIMULATOR //模拟器
+
+#define SIMULATOR YES
+
+#elif TARGET_OS_IPHONE //真机
+
+#define SIMULATOR NO
+
+#endif
+
+
+#define ImageUrl @"http://img.iprchg.com"
+#define CustomerServiceUrl @"https://dct.zoosnet.net/LR/Chatpre.aspx?id=DCT66745840&lng=cn"
+
+
+#define PatentCode @"YWLX02-04"
+#define TrademarkCode @"YWLX02-06"
+#define CopyrightCode @"YWLX02-05"
+#define InternationalCode @"YWLX02-07"
+
+
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+
+#define UIColorFromRGB(rgbValue) UIColorFromRGBA(rgbValue, 1.0)
+#define MainColor UIColorFromRGB(0xfe6246)
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define MyApp ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#define FilterWidth (ScreenWidth-100)
+#define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define ImageURL(url) [NSString stringWithFormat:@"%@%@",ImageUrl,url]
+
+#endif /* PrefixHeader_pch */

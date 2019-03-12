@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>YWLX01-04-04</key>
+	<string>无效宣告</string>
+	<key>YWLX01-04-05</key>
+	<string>代缴年费</string>
+	<key>YWLX01-04-06</key>
+	<string>专利复审</string>
+	<key>YWLX01-04-07</key>
+	<string>著录变更</string>
+	<key>YWLX01-04-08</key>
+	<string>意见答复</string>
+	<key>YWLX01-04-09</key>
+	<string>权利恢复</string>
+	<key>YWLX01-04-10</key>
+	<string>无效宣告</string>
+	<key>YWLX01-04-11</key>
+	<string>专利复审</string>
+	<key>YWLX01-04-12</key>
+	<string>办登</string>
+	<key>YWLX01-04-13</key>
+	<string>办登</string>
+	<key>YWLX01-09-01</key>
+	<string>仅递交</string>
+	<key>YWLX01-09-02</key>
+	<string>仅撰写</string>
+	<key>YWLX01-09-03</key>
+	<string>质检</string>
+	<key>YWLX01-09-04</key>
+	<string>OA答复</string>
+	<key>YWLX01-09-05</key>
+	<string>全流程</string>
+</dict>
+</plist>

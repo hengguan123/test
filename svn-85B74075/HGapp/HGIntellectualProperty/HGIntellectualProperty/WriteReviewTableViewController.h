@@ -1,0 +1,16 @@
+//
+//  WriteReviewTableViewController.h
+//  HGIntellectualProperty
+//
+//  Created by 耿广杰 on 2017/6/12.
+//  Copyright © 2017年 HG. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface WriteReviewTableViewController : UITableViewController
+
+
+@property(nonatomic,strong)ErrandModel *model;
+
+@end

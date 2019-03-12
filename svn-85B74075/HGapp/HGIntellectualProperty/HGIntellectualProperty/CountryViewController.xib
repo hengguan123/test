@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryViewController">
+            <connections>
+                <outlet property="tableView" destination="3MZ-G7-GGR" id="z5a-aE-2LX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ZQ-Lm-oTd">
+                    <rect key="frame" x="75" y="0.0" width="300" height="168"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.38431372549999998" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="34" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3MZ-G7-GGR">
+                    <rect key="frame" x="75" y="88" width="300" height="646"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qK7-HD-KE7"/>
+                        <outlet property="delegate" destination="-1" id="ReC-ey-TlP"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBD-pP-Zmy">
+                    <rect key="frame" x="75" y="734" width="300" height="44"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.38431372549999998" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="qAw-an-EVu"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sure:" destination="-1" eventType="touchUpInside" id="UJt-Gq-ycq"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXf-GM-XVa">
+                    <rect key="frame" x="0.0" y="0.0" width="75" height="812"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="XH7-BT-rmh" appends="YES" id="gMT-ao-D0n"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择受理国" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMR-9Y-39O">
+                    <rect key="frame" x="75" y="44" width="300" height="44"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.38431372549999998" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Jq5-Qo-Onc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3MZ-G7-GGR" firstAttribute="trailing" secondItem="Ci6-n3-VXb" secondAttribute="trailing" id="2BS-mL-GpN"/>
+                <constraint firstItem="3MZ-G7-GGR" firstAttribute="top" secondItem="Ci6-n3-VXb" secondAttribute="top" constant="44" id="3tM-NB-EbR"/>
+                <constraint firstItem="IMR-9Y-39O" firstAttribute="leading" secondItem="Ci6-n3-VXb" secondAttribute="leading" constant="75" id="6gb-Ne-Vmh"/>
+                <constraint firstItem="3MZ-G7-GGR" firstAttribute="leading" secondItem="Ci6-n3-VXb" secondAttribute="leading" constant="75" id="KBH-JX-RA8"/>
+                <constraint firstItem="IMR-9Y-39O" firstAttribute="trailing" secondItem="Ci6-n3-VXb" secondAttribute="trailing" id="S7r-Hc-eSN"/>
+                <constraint firstItem="Ci6-n3-VXb" firstAttribute="bottom" secondItem="3MZ-G7-GGR" secondAttribute="bottom" constant="44" id="WMg-vW-dJs"/>
+                <constraint firstItem="qBD-pP-Zmy" firstAttribute="leading" secondItem="Ci6-n3-VXb" secondAttribute="leading" constant="75" id="pa0-b3-aXB"/>
+                <constraint firstItem="IMR-9Y-39O" firstAttribute="top" secondItem="Ci6-n3-VXb" secondAttribute="top" id="ri0-3w-CM4"/>
+                <constraint firstItem="qBD-pP-Zmy" firstAttribute="bottom" secondItem="Ci6-n3-VXb" secondAttribute="bottom" id="su7-hd-1Hj"/>
+                <constraint firstItem="qBD-pP-Zmy" firstAttribute="trailing" secondItem="Ci6-n3-VXb" secondAttribute="trailing" id="xgc-xY-7sq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Ci6-n3-VXb"/>
+            <point key="canvasLocation" x="69.5" y="144"/>
+        </view>
+        <tapGestureRecognizer id="XH7-BT-rmh">
+            <connections>
+                <action selector="hidden:" destination="-1" id="Nfa-dE-vhr"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

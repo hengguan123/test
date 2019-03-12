@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterCountryViewController">
+            <connections>
+                <outlet property="tableView" destination="qm1-aC-TSV" id="FDW-vI-UdV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qm1-aC-TSV">
+                    <rect key="frame" x="0.0" y="44" width="375" height="694"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rEY-KL-OBs"/>
+                        <outlet property="delegate" destination="-1" id="Ve2-hx-9Ns"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mo-wc-Mwn">
+                    <rect key="frame" x="0.0" y="738" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.38431372549999998" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="x3D-XK-PBz"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sure:" destination="-1" eventType="touchUpInside" id="75a-GP-E1Q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2Mo-wc-Mwn" firstAttribute="leading" secondItem="iQe-5D-e14" secondAttribute="leading" id="3De-P0-dyp"/>
+                <constraint firstItem="iQe-5D-e14" firstAttribute="bottom" secondItem="qm1-aC-TSV" secondAttribute="bottom" constant="40" id="7iU-Lr-PNl"/>
+                <constraint firstItem="qm1-aC-TSV" firstAttribute="leading" secondItem="iQe-5D-e14" secondAttribute="leading" id="8Sg-g6-3xA"/>
+                <constraint firstItem="2Mo-wc-Mwn" firstAttribute="bottom" secondItem="iQe-5D-e14" secondAttribute="bottom" id="hHP-hT-iyD"/>
+                <constraint firstItem="qm1-aC-TSV" firstAttribute="trailing" secondItem="iQe-5D-e14" secondAttribute="trailing" id="svG-db-tPt"/>
+                <constraint firstItem="qm1-aC-TSV" firstAttribute="top" secondItem="iQe-5D-e14" secondAttribute="top" id="u1x-sI-H1s"/>
+                <constraint firstItem="2Mo-wc-Mwn" firstAttribute="trailing" secondItem="iQe-5D-e14" secondAttribute="trailing" id="wwJ-fN-CoM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="iQe-5D-e14"/>
+            <point key="canvasLocation" x="82.5" y="142"/>
+        </view>
+    </objects>
+</document>

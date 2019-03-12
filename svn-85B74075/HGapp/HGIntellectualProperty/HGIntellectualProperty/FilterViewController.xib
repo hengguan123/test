@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterViewController">
+            <connections>
+                <outlet property="resetBtn" destination="0D9-YN-x0c" id="QKK-1y-fwz"/>
+                <outlet property="sureBtn" destination="gAD-9A-mC5" id="0yU-z4-vWe"/>
+                <outlet property="tableView" destination="PpE-Fq-9Gf" id="bHJ-7E-FLc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D9-YN-x0c">
+                    <rect key="frame" x="0.0" y="733" width="31" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="lAj-rM-csg"/>
+                    </constraints>
+                    <state key="normal" title="重置">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="reSet:" destination="-1" eventType="touchUpInside" id="Q3b-Ql-4Ai"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAD-9A-mC5">
+                    <rect key="frame" x="344" y="733" width="31" height="45"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.38431372549999998" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="kNF-Jb-BIA"/>
+                    </constraints>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="finish:" destination="-1" eventType="touchUpInside" id="nX7-Wc-4Cp"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PpE-Fq-9Gf">
+                    <rect key="frame" x="0.0" y="44" width="375" height="689"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wA7-rn-1TP"/>
+                        <outlet property="delegate" destination="-1" id="INm-pq-S78"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PpE-Fq-9Gf" firstAttribute="trailing" secondItem="frZ-ei-2Uv" secondAttribute="trailing" id="8hO-Xv-S71"/>
+                <constraint firstItem="frZ-ei-2Uv" firstAttribute="bottom" secondItem="PpE-Fq-9Gf" secondAttribute="bottom" constant="45" id="8wg-IM-FdI"/>
+                <constraint firstItem="PpE-Fq-9Gf" firstAttribute="top" secondItem="frZ-ei-2Uv" secondAttribute="top" id="Cz1-IJ-p5N"/>
+                <constraint firstItem="0D9-YN-x0c" firstAttribute="bottom" secondItem="frZ-ei-2Uv" secondAttribute="bottom" id="Hqe-mU-OEQ"/>
+                <constraint firstItem="gAD-9A-mC5" firstAttribute="bottom" secondItem="frZ-ei-2Uv" secondAttribute="bottom" id="IeV-VL-fKy"/>
+                <constraint firstItem="gAD-9A-mC5" firstAttribute="trailing" secondItem="frZ-ei-2Uv" secondAttribute="trailing" id="TpD-4U-W5R"/>
+                <constraint firstItem="PpE-Fq-9Gf" firstAttribute="leading" secondItem="frZ-ei-2Uv" secondAttribute="leading" id="xqo-1Y-9OL"/>
+                <constraint firstItem="0D9-YN-x0c" firstAttribute="leading" secondItem="frZ-ei-2Uv" secondAttribute="leading" id="xwd-Yt-4jp"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="frZ-ei-2Uv"/>
+            <point key="canvasLocation" x="54.5" y="85"/>
+        </view>
+    </objects>
+</document>
